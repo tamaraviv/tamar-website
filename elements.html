@@ -1,21 +1,100 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Elements</title>
+    <title>אלמנטים ורכיבי HTML | תמר אביב</title>
+    <!-- Google Fonts: Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>HTML Elements</h1>
-      <p>
-        This page provides an overview of common HTML elements. Use this page to
-        see how your CSS changes the styling of these elements.
-      </p>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <a href="index.html" class="header-brand">
+          <span class="brand-title">תמר אביב</span>
+          <span class="brand-badge">CS & Dev</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          type="button"
+          class="menu-toggle-btn"
+          id="menu-toggle-btn"
+          aria-label="פתח תפריט ניווט"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <img src="/icons/menu.svg" alt="" class="menu-icon" />
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="ניווט ראשי">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">דף הבית</a></li>
+            <li><a href="about.html" class="nav-link">אודות ותחומי עניין</a></li>
+            <li><a href="elements.html" class="nav-link active">אלמנטים</a></li>
+            <li>
+              <a
+                href="https://github.com/product-jam-2027/course/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >הקורס</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="תפריט מובייל"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        class="menu-close-btn"
+        id="menu-close-btn"
+        aria-label="סגור תפריט"
+      >
+        <img src="/icons/close.svg" alt="" class="close-icon" />
+      </button>
+
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">דף הבית</a></li>
+        <li><a href="about.html" class="mobile-nav-link">אודות ותחומי עניין</a></li>
+        <li><a href="elements.html" class="mobile-nav-link active">אלמנטים</a></li>
+        <li>
+          <a
+            href="https://github.com/product-jam-2027/course/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-nav-link"
+            >הקורס</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="elements-container">
+      <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="border: none; margin-bottom: 0.5rem;">ספריית אלמנטים ורכיבי HTML</h1>
+        <p style="color: var(--color-text-muted);">
+          סקירה מקיפה של רכיבי HTML מעוצבים לפי מערכת העיצוב של האתר האישי של תמר אביב
+        </p>
+      </div>
     <nav>
       <ul>
         <li>
@@ -620,7 +699,32 @@
             </p>
           </fieldset>
         </form>
-      </section>
-    </main>
+      </main>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">דף הבית</a></li>
+          <li><a href="about.html" class="footer-link">אודות</a></li>
+          <li><a href="elements.html" class="footer-link">אלמנטים</a></li>
+          <li>
+            <a
+              href="https://github.com/product-jam-2027/course/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+              >הקורס ב-GitHub</a
+            >
+          </li>
+        </ul>
+        <p class="footer-copy">
+          תמר אביב © 2026 • פותח במסגרת קורס Digital Product Jam (בצלאל & העברית)
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
