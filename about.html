@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>אודות ותחומי עניין | תמר אביב</title>
+    <title>קצת עליי | תמר אביב</title>
     <!-- Google Fonts: Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +19,14 @@
     <!-- Site Header -->
     <header class="site-header">
       <div class="header-container">
-        <a href="index.html" class="header-brand">
-          <span class="brand-title">תמר אביב</span>
-          <span class="brand-badge">CS & Dev</span>
-        </a>
+        <a href="index.html" class="site-title">תמר אביב</a>
 
         <!-- Mobile Menu Toggle Button -->
         <button
           type="button"
           class="menu-toggle-btn"
           id="menu-toggle-btn"
-          aria-label="פתח תפריט ניווט"
+          aria-label="פתח תפריט"
           aria-expanded="false"
           aria-controls="mobile-nav"
         >
@@ -40,9 +37,7 @@
         <nav class="desktop-nav" aria-label="ניווט ראשי">
           <ul class="nav-list">
             <li><a href="index.html" class="nav-link">דף הבית</a></li>
-            <li>
-              <a href="about.html" class="nav-link active">אודות ותחומי עניין</a>
-            </li>
+            <li><a href="about.html" class="nav-link active">קצת עליי</a></li>
             <li><a href="elements.html" class="nav-link">אלמנטים</a></li>
             <li>
               <a
@@ -76,11 +71,7 @@
 
       <ul class="mobile-nav-links">
         <li><a href="index.html" class="mobile-nav-link">דף הבית</a></li>
-        <li>
-          <a href="about.html" class="mobile-nav-link active"
-            >אודות ותחומי עניין</a
-          >
-        </li>
+        <li><a href="about.html" class="mobile-nav-link active">קצת עליי</a></li>
         <li><a href="elements.html" class="mobile-nav-link">אלמנטים</a></li>
         <li>
           <a
@@ -94,109 +85,46 @@
       </ul>
     </nav>
 
-    <!-- About Main Content -->
-    <main>
-      <section class="about-hero">
-        <div class="section-tag">קצת יותר לעומק</div>
-        <h1 class="hero-title">הסיפור שלי & תחומי העניין 🌟</h1>
-        <p class="section-subtitle">
-          מהאקדמיה ועולם הפיתוח ועד למגרש הטניס, הים והטבע
-        </p>
-      </section>
+    <!-- Main Content -->
+    <main class="site-main">
+      <div class="content-container">
+        <h1 class="page-heading">קצת עליי</h1>
 
-      <section class="section-container" style="padding-top: 0">
-        <div class="about-timeline">
-          <!-- Item 1: CS & Matar -->
-          <article class="timeline-item">
-            <div class="timeline-icon">🎓</div>
-            <div class="timeline-content">
-              <h4>לימודים אקדמיים ותוכנית המצטיינים ״מטר״</h4>
-              <div class="timeline-meta">מדעי המחשב • שנה ג׳</div>
-              <p>
-                אני לומדת לתואר ראשון במדעי המחשב, ונמצאת כעת בעיצומה של שנת הלימודים
-                השלישית. כחלק מתוכנית המצטיינים ״מטר״, אני נחשפת לפרויקטים מאתגרים,
-                מחקר מתקדם ועבודה משותפת עם סטודנטים מובילים. השנה אני משתתפת
-                ב-Digital Product Jam — שיתוף פעולה ייחודי בין בצלאל לאוניברסיטה
-                העברית, שמחבר בין חשיבה מוצרית, עיצוב ופיתוח תוכנה מעשי.
-              </p>
-            </div>
-          </article>
-
-          <!-- Item 2: Check Point -->
-          <article class="timeline-item">
-            <div class="timeline-icon">💻</div>
-            <div class="timeline-content">
-              <h4>פיתוח תוכנה ב-Check Point</h4>
-              <div class="timeline-meta">Software Developer Student</div>
-              <p>
-                במקביל ללימודים, אני עובדת כמפתחת תוכנה במשרת סטודנט בחברת
-                צ׳קפוינט — אחת מחברות אבטחת המידע והסייבר המובילות בעולם. העבודה
-                בצוות פיתוח מאפשרת לי ליישם ידע תיאורטי הלכה למעשה, להתמודד עם
-                אתגרי Scale, ולכתוב קוד רובסטי בסביבת פרודקשן אמיתית.
-              </p>
-            </div>
-          </article>
-
-          <!-- Item 3: Tennis -->
-          <article class="timeline-item">
-            <div class="timeline-icon">🎾</div>
-            <div class="timeline-content">
-              <h4>טניס — 10 שנים של תשוקה ומגרש</h4>
-              <div class="timeline-meta">ספורט • משמעת • פוקוס</div>
-              <p>
-                אני משחקת טניס כבר עשור. טניס עבורי הוא הרבה מעבר לפעילות גופנית;
-                הוא בית ספר למשמעת עצמית, קור רוח תחת לחץ, קבלת החלטות בשבריר שנייה
-                וחוסן מנטלי. הדיוק שנדרש על המגרש מלווה אותי גם בצורה שבה אני
-                ניגשת לפתרון בעיות טכנולוגיות וכתיבת קוד.
-              </p>
-            </div>
-          </article>
-
-          <!-- Item 4: Outdoors & Beach -->
-          <article class="timeline-item">
-            <div class="timeline-icon">🌊</div>
-            <div class="timeline-content">
-              <h4>אהבה לים, לטיולים ולטבע</h4>
-              <div class="timeline-meta">טבע • הרפתקאות • השראה</div>
-              <p>
-                בסופי שבוע וברגעי פנאי, הים והטבע הם המקומות שבהם אני מטעינה מצברים.
-                טיולים בשבילי הארץ, נסיעות וגילוי מקומות חדשים מעניקים לי פרספקטיבה
-                רעננה, יצירתיות ואנרגיה חיובית.
-              </p>
-            </div>
-          </article>
+        <div class="bio-paragraph" style="text-align: right">
+          <p style="margin-bottom: 1.5rem">
+            אני תמר אביב, סטודנטית שנה ג׳ למדעי המחשב וחלק מתוכנית המצטיינים
+            ״מטר״. במסגרת הלימודים אני לוקחת חלק בקורס Product Jam, שמפגיש בין
+            עולמות הטכנולוגיה, המוצר והעיצוב.
+          </p>
+          <p style="margin-bottom: 1.5rem">
+            ביומיום אני עובדת כמפתחת תוכנה במשרת סטודנט בחברת צ׳קפוינט, שם אני
+            רוכשת ניסיון מעשי בפיתוח מערכות ובכתיבת קוד בסביבה מקצועית.
+          </p>
+          <p style="margin-bottom: 1.5rem">
+            מחוץ ללימודים ולעבודה, אני שחקנית טניס כבר 10 שנים — ספורט שאני מאוד
+            אוהבת ומלווה אותי מילדות. בנוסף, אני מאוד אוהבת לטייל בארץ, לגלות
+            מקומות חדשים ולבלות בים.
+          </p>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem">
-          <a href="index.html" class="btn btn-secondary">← חזרה לדף הבית</a>
-          <a href="elements.html" class="btn btn-primary" style="margin-right: 0.75rem"
-            >לספריית האלמנטים 🎨</a
+        <div style="margin-top: 1.5rem">
+          <a
+            href="index.html"
+            class="greet-button"
+            style="
+              display: inline-block;
+              text-decoration: none;
+              padding: 0.75rem 2rem;
+            "
+            >חזרה לדף הבית</a
           >
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Site Footer -->
     <footer class="site-footer">
-      <div class="footer-container">
-        <ul class="footer-links">
-          <li><a href="index.html" class="footer-link">דף הבית</a></li>
-          <li><a href="about.html" class="footer-link">אודות</a></li>
-          <li><a href="elements.html" class="footer-link">אלמנטים</a></li>
-          <li>
-            <a
-              href="https://github.com/product-jam-2027/course/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer-link"
-              >הקורס ב-GitHub</a
-            >
-          </li>
-        </ul>
-        <p class="footer-copy">
-          תמר אביב © 2026 • פותח במסגרת קורס Digital Product Jam (בצלאל & העברית)
-        </p>
-      </div>
+      <p>תמר אביב © 2026 | Product Jam</p>
     </footer>
 
     <script type="module" src="/main.js"></script>
