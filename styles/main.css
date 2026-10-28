@@ -266,6 +266,42 @@ body {
 }
 
 /* -------------------------------------------------------------------------- */
+/* YouTube Video Section                                                      */
+/* -------------------------------------------------------------------------- */
+.video-section {
+  width: 100%;
+  max-width: 540px;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.video-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-black);
+  background-color: var(--color-black);
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* -------------------------------------------------------------------------- */
 /* Elements Page Styling (Clean Black & White)                                */
 /* -------------------------------------------------------------------------- */
 .elements-container {
