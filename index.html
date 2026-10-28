@@ -1,20 +1,178 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>אתר אינטרנט</title>
+    <!-- Google Fonts: Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my Website!</h1>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title">אתר אינטרנט</h1>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          type="button"
+          class="menu-toggle-btn"
+          id="menu-toggle-btn"
+          aria-label="פתח תפריט"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <img src="/icons/menu.svg" alt="" class="menu-icon" />
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="ניווט ראשי">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">דף הבית</a></li>
+            <li><a href="elements.html" class="nav-link">אלמנטים</a></li>
+            <li>
+              <a
+                href="https://github.com/product-jam-2027/course/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >הקורס</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <p>This is a paragraph.</p>
+
+    <!-- Mobile Navigation Drawer / Overlay -->
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="תפריט מובייל"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        class="menu-close-btn"
+        id="menu-close-btn"
+        aria-label="סגור תפריט"
+      >
+        <img src="/icons/close.svg" alt="" class="close-icon" />
+      </button>
+
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">דף הבית</a></li>
+        <li><a href="elements.html" class="mobile-nav-link">אלמנטים</a></li>
+        <li>
+          <a
+            href="https://github.com/product-jam-2027/course/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-nav-link"
+            >הקורס</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="site-main">
+      <article class="article-container">
+        <h2 class="main-heading">ברוכים הבאים לאתר האינטרנט שלי</h2>
+
+        <div class="article-body">
+          <p>
+            האינטרנט (<a
+              href="https://he.wikipedia.org/wiki/%D7%A2%D7%91%D7%A8%D7%99%D7%AA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >בעברית</a
+            >: מִרְשֶׁתֶת) הוא
+            <a
+              href="https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%AA_%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D"
+              target="_blank"
+              rel="noopener noreferrer"
+              >רשת תקשורת נתונים</a
+            >
+            בהיקף כמעט כלל-עולמי שנוצרה כתוצאה מחיבורים רבים בין
+            <a
+              href="https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%AA_%D7%9E%D7%97%D7%A9%D7%91%D7%99%D7%9D"
+              target="_blank"
+              rel="noopener noreferrer"
+              >רשתות מחשבים</a
+            >
+            שאפשרו תקשורת בין מחשבים רבים ברשתות רבות.
+          </p>
+
+          <p>
+            התשתית הרעיונית והמחקרית של האינטרנט נמצאת בתחילת שנות ה-60 במסגרת
+            מחקרים של
+            <a
+              href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%A8%D7%93_%D7%94%D7%94%D7%92%D7%A0%D7%94_%D7%A9%D7%9C_%D7%90%D7%A8%D7%A6%D7%95%D7%AA_%D7%94%D7%91%D7%A8%D7%99%D7%AA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >הסוכנות הצבאית לפרויקטים מחקריים מתקדמים</a
+            >
+            של
+            <a
+              href="https://he.wikipedia.org/wiki/DARPA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >משרד ההגנה האמריקאי (ARPA)</a
+            >. תחילת פעילותו של האינטרנט, כלומר הרשת המבצעית הראשונה (<a
+              href="https://he.wikipedia.org/wiki/ARPANET"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ARPANET</a
+            >), החלה בסוף שנות ה-60, כאשר בשנת
+            <a
+              href="https://he.wikipedia.org/wiki/1969"
+              target="_blank"
+              rel="noopener noreferrer"
+              >1969</a
+            >
+            נשלחה ההודעה הראשונה בין שני מחשבים מחוברים. היקף רשת האינטרנט,
+            כמות המידע העצומה השמורה בשרתים והפעילות הרבה שמבוצעת באמצעות
+            האינטרנט הפכו את האינטרנט לגורם רב משמעות בהתפתחות הכלכלית,
+            החברתית והתרבותית.
+          </p>
+        </div>
+
+        <!-- Greeting Interaction Form -->
+        <section class="greet-section" aria-label="טופס ברכה">
+          <form
+            id="greet-form"
+            class="greet-form"
+            onsubmit="event.preventDefault();"
+          >
+            <label for="name-input" class="greet-label">איך קוראים לך?</label>
+            <input
+              type="text"
+              id="name-input"
+              class="greet-input"
+              placeholder="שם פרטי"
+              autocomplete="given-name"
+            />
+            <button type="button" id="greet-button" class="greet-btn">
+              בבקשה ללחוץ על הכפתור
+            </button>
+          </form>
+        </section>
+      </article>
     </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <p>Product Jam 2027</p>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
